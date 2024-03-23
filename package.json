@@ -1,5 +1,6 @@
 {
   "name": "react-quiz",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node functions/api.js",
+    "server": "json-server --watch data/questions.json --port 8000",
     "dev": "netlify dev"
   },
   "eslintConfig": {

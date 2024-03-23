@@ -85,7 +85,10 @@ export default function App() {
   useEffect(function () {
     async function getQuestions() {
       try {
-        const res = await fetch("http://localhost:8000/questions");
+        // const res = await fetch("http://localhost:8000/questions");
+        const res = await fetch(
+          "https://my-json-server.typicode.com/Karim-Abu-Alkhair/The-React-Quiz/questions/"
+        );
         const data = await res.json();
         dispatch({ type: "dataReceived", payload: data });
         // throw new Error("Something went wrong");
