@@ -8,13 +8,13 @@ function FinishScreen({ points, maxPossiblePoints, highscore, dispatch }) {
   if (percentage === 0) emoji = "🤦‍♂️";
   return (
     <>
-      <p className="result">
+      <p className="result display-6 w-auto px-5 py-3 mx-auto">
         <span>{emoji}</span> You scored <strong>{points}</strong> out of{" "}
         {maxPossiblePoints} ({Math.ceil(percentage)}%)
       </p>
       <p className="highscore">(Highscore: {highscore} points)</p>
       <button
-        className="btn btn-ui"
+        className="btn-me d-block mx-auto"
         onClick={() => dispatch({ type: "restart" })}
       >
         Restart quiz

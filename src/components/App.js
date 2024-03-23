@@ -87,7 +87,7 @@ export default function App() {
       try {
         // const res = await fetch("http://localhost:8000/questions");
         const res = await fetch(
-          "https://my-json-server.typicode.com/Karim-Abu-Alkhair/The-React-Quiz/questions/"
+          "https://my-json-server.typicode.com/jpowell79/react-quiz/questions/"
         );
         const data = await res.json();
         dispatch({ type: "dataReceived", payload: data });
